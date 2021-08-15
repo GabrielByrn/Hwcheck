@@ -1,3 +1,5 @@
+$pink:#b36b7f 2px 2px;
+$b: block;
 *, html, body{
     padding: 0%;
     margin: 0%;
@@ -19,13 +21,16 @@ font-size: 0px;
     width: 25%;
     display: inline-block;
     vertical-align: top;
+    &:hover ul.where{
+    display: $b;
 }
-.menu ul li a{
-    display: block;
+    a{
+    display: $b;
     background: #c38d94;
     padding: 15px;
     text-align: center;
     border-right: 2px solid violet;
+}
 }
 .page_last{
     border-right: 0;
@@ -38,39 +43,49 @@ a{
 }
 ul.where{  
     display: none;
-}
-ul.where li{ 
-    width: 100%;
-    display: block;
-    position:relative;
-}
-ul.where li .inner{
-    border:none;
-}
-.menu ul li:hover ul.where{
-    display: block;
+        li{ 
+         width: 100%;
+         display: $b;
+         position:relative;
+             .inner{
+                 border:none;
+            }
+        }
 }
 ul.wtf{
     position: absolute;
     right: 100%;
     top: 0;
-    display: block;
+    display: $b;
+        li .ok{
+        border:none;
+        }
+    .high li a{
+    display: $b;
+    background: #a2d2ff;
+    padding: 15px;
+    text-align: center;
+    border-top:2px solid #a0c4ff;
+    text-shadow: #ffc8dd 2px 2px;
+    }
+    .okkkk:hover ul.high{
+    display: $b;
+}
 }
 ul.wtf{
     display: none
 }
-.menu .where li:hover ul.wtf{
-    display: block;
-}
-.menu .where li a{
-    display: block;
+.menu .where li{
+    &:hover ul.wtf{
+    display: $b;
+    }
+    a{
+    display: $b;
     background: #cea9fb;
     padding: 15px;
     text-align: center;
     border-bottom: 2px solid #9c85bf;
 }
-ul.wtf li .ok{
-    border:none;
 }
 ul.high li .blya{
     border:none;
@@ -82,44 +97,48 @@ ul.tree li .okey{
     border:none;
 }
 .menu .wtf li a{
-    display: block;
+    display: $b;
     background: #b36b7f;
     padding: 15px;
     text-align: center;
-    border-top:2px solid #654074;
-    text-shadow: #b36b7f 2px 2px;
+    border-top: 2px solid #654074;
+    text-shadow: $pink;
 }
-
 ul.bed{
     display: none;
     position: absolute;
     right: 100%;
     top: 0;
 }
-.where .bed li a{
-    display: block;
+ul.where{
+    .bed li a{
+    display: $b;
     background: #b36b7f;
     padding: 15px;
     text-align: center;
-    border-top:2px solid #654074;
-    text-shadow: #b36b7f 2px 2px;
+    border-top: 2px solid #654074;
+    text-shadow: $pink;
 }
-ul.where .none:hover ul.bed{
-    display: block;
+    .none:hover ul.bed{
+    display: $b;
 }
-ul.tree{
+.one:hover ul.tree{
+    display: $b;
+}
+}
+.tree{
     display: none;
     position: absolute;
     right: 100%;
     top: 0;
-}
-.where .tree li a{
-    display: block;
+    li a{
+    display: $b;
     background: #a2d2ff;
     padding: 15px;
     text-align: center;
     border-top:2px solid #654074;
     text-shadow: #b36b7f 1px 1px;
+}
 }
 ul.high{
     display: none;
@@ -127,35 +146,6 @@ ul.high{
     right: 100%;
     top: 0;
 }
-.wtf .high li a{
-    display: block;
-    background: #a2d2ff;
-    padding: 15px;
-    text-align: center;
-    border-top:2px solid #a0c4ff;
-    text-shadow: #ffc8dd 2px 2px;
-}
-ul.wtf .okkkk:hover ul.high{
-    display: block;
-}
-ul.where .one:hover ul.tree{
-    display: block;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 a.page1::before{
     content: '\2780';
@@ -169,4 +159,17 @@ a.page3::before{
 a.page4::before{
     content: '\26AF';
 }
+a.page1::before{
+    content: '\2780';
+}
+a.page2::before{
+    content: '\279B';
+}
+a.page3::before{
+    content: '\2740';
+}
+a.page4::before{
+    content: '\26AF';
+}
+
 
